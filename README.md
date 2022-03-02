@@ -5,23 +5,24 @@
 ---
 
 
-1. Opan Api.Core Project using [visual Stiduo](https://visualstudio.microsoft.com/downloads/ 'Visual Studio').  
+1. Opan Api.Core Project using [visual Studio](https://visualstudio.microsoft.com/downloads/ 'Visual Studio').  
 2. Open `Solution Explorer` Then Go to `transition.Entities` > `EntityClass` \
 ![SolutionExplorer.jpg](SolutionExplorer.jpg "SolutionExplorer.jpg")
 
 3. Create Your Entity Class File Inside Area Folder. eg:- in above Image `Example.cs` is Entity class File. and `UIManual` Is Area Name.
     - Click [here](#entity-class) to learn, How to Creact Entity Class File.
 
-4. After Creating Entity Class File. Then Build `transition.ScaffolderUI`. \
+4. After Creating Entity Class File. Then Build `transition.ScaffolderUI` & `transition.Enitiy` . \
 ![ScaffoldBuild.jpg](ScaffoldBuild.jpg "ScaffoldBuild.jpg")
 
-5. If you Want to Change the Database name then Open `appsettings.Development.json` file Then Make changes in the ConnectionString.
+5. If you Want to Change the Database name then Open `appsettings.Development.json` file Then Make changes in the ConnectionString. \
+![conectionString.png](conectionString.png "conectionString.png")
 
 ## &nbsp;
 
 ## Step 2 Run The Scaffolder 
 ---
-6. After Building Project Run `transition.ScaffolderUI` \
+6. After Building Project Run `transition.ScaffolderUI` &  \
 ![RunScafolder.jpg](RunScafolder.jpg "RunScafolder.jpg")
 
 7. After Succesfully Run. It show Scaffolder UI As Shown in below.\
@@ -41,17 +42,33 @@
 
 11. After Selecting functionalities. press Scaffold button and wait until it get completed.
 
-12. after scaffolding get completed. Stop the `transition.scaffolderUI` and then build `transition.API`  and run it in similar way we build & run `transition.ScaffolderUI`.
+12. After scaffolding gets completed,stop the `transition.scaffolderUI` and then build `transition. API`  and run it in a similar way as we had built & run `transition.ScaffolderUI`
+![StopScaffold.jpg](StopScaffold.jpg "StopScaffold.jpg")
+![RunAPI.jpg](RunAPI.jpg "RunAPI.jpg")
+
+
 
 13. While `Transition.API` is runing. open WebUI Project on [visual studio code](https://code.visualstudio.com/ "visual studio code") (recommended)
 
-14. make sure that changes have done after scaffolding
-
+14.  Make sure that changes have been done after scaffolding **as per below:** \
+     - Check It Should Create Json with name of Your Entity class file On UI. And Other Files also created on UI Like show in below's ScreenShort\
+    ![ChangesCreatedUI.jpg](ChangesCreatedUI.jpg "ChangesCreatedUI.jpg")
+    
+     - Check It Should Create Json with name of Your Entity class file On API. And Other Files also created on API Like show in below's ScreenShort\
+    ![ChangesCreatedAPI.jpg](ChangesCreatedAPI.jpg "ChangesCreatedAPI.jpg")
 15. Run the Project on terminal using `ng serve` command.
+     - ng serve Start
+    ![NgServe.jpg](NgServe.jpg "NgServe.jpg")
+     - When Ng Serve Get Complete
+    ![NGServeComplete.jpg](NGServeComplete.jpg "NGServeComplete.jpg")
+
 
 16. In WebUI open `env.json` file and make sure baseURL is pointing to `https://localhost:44360/api`
+![EnvUI.jpg](EnvUI.jpg "EnvUI.jpg")
 
-17. After Running Api and WebUI Successfully. open browser and test check the changes on `https://localhost:4200`
+17. After Running Api and WebUI Successfully. open browser and test check the changes on `https://localhost:4200`. 
+![TestUI.jpg](TestUI.jpg "TestUI.jpg")
+![TestUIExpandView.jpg](TestUIExpandView.jpg "TestUIExpandView.jpg")
 
 >## NOTE
 > If You face any error during in above process. Please contact to Developer
